@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Polygon Map</title>
+</head>
+<body>
+<div class="formContainer">
+    <div class="whitBox">
+        <form action="createPolygon" method="POST">
+            {% csrf_token %}
+            <label>GeoJsonData:</label>
+            <input type="text" name="geojson" placeholder="Provide Geojson data here : " /> <br/>
+            <button type="submit" class="button">Submit</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
